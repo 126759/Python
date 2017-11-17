@@ -1,0 +1,45 @@
+#Vending Machine
+
+product = float(input("What do you want? Lays(1), Coke(2), Ice Lemon Tea(3), Dairy Milk(4), Ice Cream(5)"))
+if product == 1:
+
+    Cash = float(input("How much Money do you have?"))
+    TPR = Cash - 2
+    print("Please inser:")
+    print(TPR)
+
+elif product == 2:
+
+     Cash = float(input("How much Money do you have?"))
+    TPR = Cash - 1.5
+    print("Please inser:")
+    print(TPR)
+
+
+elif product == 3:
+
+     Cash = float(input("How much Money do you have?"))
+    TPR = Cash - 1
+    print("Please inser:")
+    print(TPR)
+
+
+elif product == 4:
+
+    Cash = float(input("How much Money do you have?"))
+    TPR = Cash - 3
+    print("Please inser:")
+    print(TPR)
+
+    
+elif product == 5:
+
+    Cash = float(input("How much Money do you have?"))
+    TPR = Cash - 1
+    print("Please inser:")
+    print(TPR)
+
+    
+
+
+      
