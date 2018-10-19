@@ -1,0 +1,80 @@
+Football Team Maker Pre Release Code
+
+Position List 
+Forward Offensive position usually placed behind the striker; this player uses speed to make crisp accurate passes.
+Right back Defensive position that covers the right side of the field; this player’s role is to impede an opponent’s progress toward the goal.
+Right midfielder Center position that plays on the right side of the field; this player uses playmaking skills to pass the ball to the forwards.
+Defensive midfielder Center position; this player tries to take the ball from the opponent before that player reaches the defenders and quickly mount a counterattack.
+Goalkeeper Position whose role is to prevent the ball from entering the goal; this is the only player allowed to touch the ball with the hands.
+Striker Offensive position whose main role is to score goals; this player plays a forward position in the opposing team’s zone.
+Left midfielder Center position that plays on the left side of the field; this player uses playmaking skills to pass the ball to the forwards.
+Defensive midfielder Center position; this player tries to take the ball from the opponent before that player reaches the defenders and quickly mount a counterattack.
+Left back Defensive position that covers the left side of the field; this player’s main role is to slow or stop an opponent’s progress toward the goal.
+Stopper Position that stays back, marks an opposing forward and prevents that player from being in a scoring position.
+Sweeper Position that stays back, anticipates defensive mistakes by teammates and makes up for them; this player is not required to closely mark an opposing player.
+Task 1.1 
+
+DECLARE MainPosition: STRING
+DECLARE Age: INTEGER
+DECLARE Goals: INTEGER
+DECLARE Shots: INTEGER
+DECLARE Target_Shots: INTEGER
+DECLARE Activity: INTEGER
+DECLARE Progress: FLOAT
+DECLARE Preffered_Foot: STRING
+DECLARE Target_Ratio: FLOAT
+DECLARE Skill: FLOAT
+DECLARE recent_progress: FLOAT
+DECLARE TeamSkill_Level: FLOAT
+
+
+DECLARE Dominant_Posistion: STRING
+DECLARE Club: STRING
+DECLARE Club_AvaliablePosiston : STRING
+
+
+DECLARE Join_Team: BOOLEAN
+
+Progress <- (Progress/Activity)*100
+Target2Shot_Ratio <- (Targer_Shot/Shots)*100
+Skill <- Progress * Target2Shot_Ratio
+Join_Team = FALSE
+FindTeam()
+
+
+PROCEDURE FindMatch()
+    WHILE join = FALSE
+        join = TRUE
+
+        IF Club_AvaliablePosiston =! MainPosition:
+            join <- FALSE
+        ELSE IF Club_AvaliablePosiston =! NOT MainPosition:
+            join <- TRUE
+
+        CASE OF
+           Skill > TeamSkill_Level: join <- FALSE
+           Skill < TeamSkill_Level: join <- FALSE
+        ENDCASE
+    ENDWHILE
+ENDPROCEDURE
+
+
+
+
+
+
+Task 1.5 
+
+Syntax Error - An error in which the program, statement doesn’t follow the rules of the language.
+
+Task 1.6
+
+There could be efficient program development. This will allow allow the modular approach since small sub programs are easier to understand.
+
+Multiple use of Subprograms, this is an advantage because it’ll allow sub programs to be relocated.
+
+Modular Programs are generally easier to debug 
+
+Task 1.7 
+
+ Dunamix Syntax Checks = The Dynamic Syntax Check validates the program syntax whole typing code and provides real-time alert to potential code violations
